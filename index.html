@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Obligatorio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form id="formulario">
+        <ul>
+            <li>
+                <label for="users">Mostrar</label>
+                <input type="number" name="users" id="numUsuarios">
+                <label for="users">usuarios</label>
+                
+            </li>
+            <li>
+                <button>Ver</button>
+            </li>
+        </ul>
+    </form>
+    <div class="filtraje" id="filtraje">
+        <p>Filtros</p>
+        <ul>
+            <li>
+                <button id="ordenarNA">Ordenar por Nombre y Apellido</button>
+            </li>
+
+            <li>
+                <label for="viejos">Usuarios que se han registrado hace más de</label>
+                <input type="number" name="viejos" id="aniosRegistrado">
+                <label for="viejos">años</label>
+                <button id="verViejos">Ver</button>
+            </li>
+
+            <li>
+                <label for="paises">Filtrar por país:</label>
+                <div id="aggHijo">
+                    
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <div id="tabla"></div>
+    <script src="index.js"></script>
+</body>
+</html>
